@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Movies</title>
+        <style>
+            h1{text-align:center;}
+            h4{margin:0;padding:5px;background:#f4f4f4;}
+            li{list-style:none;padding-left:5px;}
+            #container{width:600px;margin:auto;overflow:hidden;}
+        </style>
+        <script>
+            var movie = [
+                {
+                title:"The Godfather",
+                year:"1972",
+                genre:"Drama",
+                director:"Francis Ford Copolla"
+            },
+            {
+                title:"Superbad",
+                year:"2007",
+                genre:"Comedy",
+                director:"Greg Mottola"
+            },
+            {
+                title:"The Departed",
+                year:"2006",
+                genre:"Drama",
+                director:"Martin Scorsese"
+            },
+            {
+                title:"Saving Private Ryan",
+                year:"1998",
+                genre:"Action",
+                director:"Steven Speilberg"
+            },
+            {
+                title:"The Expendables",
+                year:"2010",
+                genre:"Action",
+                director:"Sylvester Stallone"
+            }
+        ];
+        </script>
+    </head>
+    <body>
+        <div id="container">
+        <h1>My Favorite Movies</h1>    
+        <ul>
+            <script>
+                for(i=0;i< movie.length;i++){
+                    document.write('<h4>'+movie[i].title+'</h4>');
+                    document.write('<li>'+movie[i].year+'</li>');
+                    document.write('<li>'+movie[i].genre+'</li>');
+                    document.write('<li>'+movie[i].director+'</li>');
+                }
+            </script>
+        </ul>
+        </div>
+    </body>
+</html>
